@@ -84,20 +84,6 @@ public class ColorPickerDialog extends Dialog {
         private static final int CENTER_Y = 100;
         private static final int CENTER_RADIUS = 32;
 
-        private int floatToByte(float x) {
-            int n = java.lang.Math.round(x);
-            return n;
-        }
-
-        private int pinToByte(int n) {
-            if (n < 0) {
-                n = 0;
-            } else if (n > 255) {
-                n = 255;
-            }
-            return n;
-        }
-
         private int ave(int s, int d, float p) {
             return s + java.lang.Math.round(p * (d - s));
         }
